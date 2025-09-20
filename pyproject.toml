@@ -1,0 +1,29 @@
+[project]
+name = "agentic-ai-practise"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [ "openai-agents>=0.3.0", "python-dotenv>=1.1.1",]
+[[project.authors]]
+name = "Marjan Ahmed"
+email = "marjan.ahmed08@yahoo.com"
+
+[build-system]
+requires = [ "hatchling",]
+build-backend = "hatchling.build"
+
+[project.scripts]
+agentic-ai-practise = "agentic_ai_practise:main"
+helpful-assistant = "agentic_ai_practise.main:start"
+agentic-ai-practise-helpful-assistant = "agentic_ai_practise.main:start"
+handoffs = "agentic_ai_practise.handoffs:start"
+turn = "agentic_ai_practise.turns:start"
+dynamicins = "agentic_ai_practise.dynamic_instructions:start"
+input_guardrails = "agentic_ai_practise.input_guardrails:start"
+output_guardrails = "agentic_ai_practise.output_guardrails:start"
+streaming = "agentic_ai_practise.streaming:start"
+openai_code = "agentic_ai_practise.openai_api_key:start"
+multi_agent = "agentic_ai_practise.multi_agent_system:start"
+hooks = "agentic_ai_practise.hooks:start"
+run_result = "agentic_ai_practise.run_result:start"
